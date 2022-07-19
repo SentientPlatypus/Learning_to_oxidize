@@ -6,9 +6,7 @@ fn main()
     let mut polish_notation = String::new();
     io::stdin().read_line(&mut polish_notation).expect("Failed to read polish notation!");
     let mut operands: Vec<i8> = Vec::new();
-
     let string_arr = polish_notation.split_whitespace();
-
     for item in string_arr
     {
         match item.parse()
